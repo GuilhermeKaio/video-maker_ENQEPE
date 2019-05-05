@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GuilhermeKaio/video-maker_ENQEPE/issues"
   },
-  "homepage": "https://github.com/GuilhermeKaio/video-maker_ENQEPE#readme"
+  "homepage": "https://github.com/GuilhermeKaio/video-maker_ENQEPE#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
 }
