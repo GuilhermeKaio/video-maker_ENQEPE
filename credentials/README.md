@@ -25,3 +25,13 @@ File: `watson-nlu.json`
 }
 
 ```
+
+## Google search
+
+```
+{
+  "apiKey": "AIzaSyCqNjjLi1qqmNOD1ZljMBakv0pZkQD13Ck",
+  "searchEngineId": "012043904672707755401:khhh1f3vtxo"
+}
+
+```
