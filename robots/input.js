@@ -5,9 +5,13 @@ function robot() {
   const content = {
     maximumSentences: 7
   }
+  const googleSearchCredentials = require('../credentials/google-search.json')
 
   content.searchTerm = askAndReturnSearchTerm()
   content.prefix = askAndReturnPrefix()
+  content.lang = askAndReturnLanguage()
+  content.searchEngineId = askAndReturnSearchEngineId(content.lang)
+
   state.save(content)
 
   function askAndReturnSearchTerm() {
@@ -20,6 +24,24 @@ function robot() {
     const selectedPrefixText = prefixes[selectedPrefixIndex]
 
     return selectedPrefixText
+  }
+
+  function askAndReturnLanguage(){
+    const language = ['pt','en']
+    const selectedLangIndex = readline.keyInSelect(language,'Choice Language: ')
+    const selectedLangText = language[selectedLangIndex]
+
+    return selectedLangText
+}
+
+  function askAndReturnSearchEngineId(lang){
+    if (lang == "pt") {
+
+      return googleSearchCredentials.searchEngineIdBR
+    }
+    else{
+      return googleSearchCredentials.searchEngineId
+    }
   }
 
 }
