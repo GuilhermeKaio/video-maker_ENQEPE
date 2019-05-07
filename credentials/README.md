@@ -28,10 +28,21 @@ File: `watson-nlu.json`
 
 ## Google search
 
+File: `google-search.json`
+
 ```
 {
   "apiKey": "AIzaSyCqNjjLi1qqmNOD1ZljMBakv0pZkQD13Ck",
   "searchEngineId": "012043904672707755401:khhh1f3vtxo"
 }
+
+```
+
+## Google youtube
+
+File: `google-youtube.json`
+
+```
+{"web":{"client_id":"866665460756-u03mf146r4b4fp60u5a7k3jcfhie06ls.apps.googleusercontent.com","project_id":"video-maker-upload-239920","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"R7_F4KTuldFAG-k5p_l3rVRr","redirect_uris":["http://localhost:5000/oauth2callback"],"javascript_origins":["http://localhost:5000"]}}
 
 ```
