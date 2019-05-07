@@ -69,6 +69,8 @@ content/*.png
 content/*.jpg
 content/*.js
 content/*.mov
+content/*.mp4
+templates/1/Logs de template.aep
 Adobe After Effects Auto-Save
 template.aep Logs
 .DS_Store
