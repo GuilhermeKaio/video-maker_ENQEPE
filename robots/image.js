@@ -29,10 +29,12 @@ async function robot() {
   async function fetchGoogleAndReturnImagesLinks(query) {
     const response = await customSearch.cse.list({
       auth: googleSearchCredentials.apiKey,
-      cx: googleSearchCredentials.searchEngineId,
+      cx: content.searchEngineId,
       q: query,
+      //q: "Texto Qualquer",
       searchType: 'image',
-      num: 2
+      num: 7,
+      imgSize: 'huge'
     })
 
     const imagesUrl = response.data.items.map((item) => {
